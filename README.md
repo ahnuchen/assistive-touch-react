@@ -1,9 +1,9 @@
-# assitive-touch
+# assistive-touch
 
 ## 🔗 demo
 - [demo](https://xue.ccy1994.top/demos/assistive-touch-react/index.html)
 
-##useage
+## useage
 ``npm install assistive-touch-react``
 
 ```javascript
