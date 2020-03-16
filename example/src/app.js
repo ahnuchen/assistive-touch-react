@@ -1,16 +1,7 @@
-# assitive-touch
-
-## 🔗 demo
-- [demo](https://xue.ccy1994.top/demos/assistive-touch-react/index.html)
-
-##useage
-``npm install assistive-touch-react``
-
-```javascript
-
+/*** examples/src/app.js ***/
 import React, {useState} from 'react'
 import {render} from 'react-dom'
-import AssistiveTouch from 'assistive-touch-react'
+import AssistiveTouch from '../../src'
 import './app.css'
 
 const edgeModeMap = {
@@ -39,6 +30,21 @@ const App = () => {
         }}>{bounce ? '回弹' : '不回弹'}</div>
 
         <div>assistive-touch</div>
+        <pre>
+            {`<AssistiveTouch
+            className="assist-touch-home"
+            edgeMode={edgeMode}
+            autoEdge={autoEdge}
+            memoryPosition={memoryPosition}
+            bounce={bounce}
+        >
+            <div className="inner">
+                <a href="/"><img
+                    src=""
+                    alt=""/></a>
+            </div>
+        </AssistiveTouch>`}
+        </pre>
         <AssistiveTouch
             className="assist-touch-home"
             edgeMode={edgeMode}
@@ -55,33 +61,3 @@ const App = () => {
     </div>
 }
 render(<App/>, document.getElementById('root'))
-```
-```css
-*{
-    margin: 0;
-    padding: 0;
-}
-.inner img{
-    width: 50px;
-    height: 50px;
-}
-
-.assist-touch-home{
-    position: absolute;
-    top: 110px;
-    right: 0;
-}
-
-.btn{
-    background-color: deepskyblue;
-    color: #ffffff;
-    width: 150px;
-    height: 44px;
-    line-height: 44px;
-    font-size: 18px;
-    border-radius: 3px;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-```
